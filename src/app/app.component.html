@@ -1,5 +1,8 @@
+<h1>{{title}}</h1>
 <div>
   @for(item of items;track item) {
-    {{item}}
+    {{item.item}}
   }
+
+  <div *ngFor="let item of items;">{{item.item}}</div>
 </div>
